@@ -10,6 +10,7 @@ Was das Skript tut:
 - sitemap.xml: wird neu geschrieben.
 
 Werke nie direkt im HTML ändern, nur in tools/werke.json.
+Ein Werk mit "sichtbar": false bleibt in der Liste, erscheint aber nirgends auf der Seite.
 """
 import html
 import json
@@ -118,9 +119,10 @@ def detail(w, werke, i, rahmen_vor, rahmen_nach):
 
 
 def main():
-    werke = json.load(open(os.path.join(ROOT, "tools", "werke.json"), encoding="utf-8"))
+    alle = json.load(open(os.path.join(ROOT, "tools", "werke.json"), encoding="utf-8"))
+    werke = [w for w in alle if w.get("sichtbar", True)]
     slugs = [w["slug"] for w in werke]
-    assert len(slugs) == len(set(slugs)), "Doppelte Slugs in werke.json"
+    assert len([w["slug"] for w in alle]) == len(set(w["slug"] for w in alle)), "Doppelte Slugs in werke.json"
 
     kunst = lies("kunst.html")
     galerie = '<div class="galerie-raster">' + "".join(karte(w) for w in werke) + "</div>"

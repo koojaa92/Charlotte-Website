@@ -13,13 +13,14 @@
   ],
   "status": "",
   "hinweis": "",
-  "empfohlen": false,
+  "empfohlen": true,
   "bilder": [
    {
     "datei": "werk-01-traces.webp",
     "alt": "Gemälde „traces“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "magical-forest",
@@ -41,7 +42,8 @@
     "datei": "werk-02-magical-forest.webp",
     "alt": "Gemälde „magical forest“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "miracles-and-smiles",
@@ -62,7 +64,8 @@
     "datei": "werk-03-miracles-and-smiles.webp",
     "alt": "Gemälde „miracles and smiles“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "summerdress",
@@ -85,7 +88,8 @@
     "datei": "werk-04-summerdress.webp",
     "alt": "Gemälde „summerdress“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "sweet-touch",
@@ -105,7 +109,8 @@
     "datei": "werk-05-sweet-touch.webp",
     "alt": "Gemälde „sweet touch“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "eternal-embrace",
@@ -125,7 +130,8 @@
     "datei": "werk-06-eternal-embrace.webp",
     "alt": "Gemälde „eternal embrace“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "deep-oceans-connected",
@@ -148,7 +154,8 @@
     "datei": "werk-07-deep-oceans-connected.webp",
     "alt": "Gemälde „deep oceans | connected“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "dream-on-earth",
@@ -168,7 +175,8 @@
     "datei": "werk-08-dream-on-earth.webp",
     "alt": "Gemälde „dream on earth“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "sacred-communion",
@@ -189,7 +197,8 @@
     "datei": "werk-09-sacred-communion.webp",
     "alt": "Gemälde „sacred communion“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "traces-2",
@@ -209,7 +218,8 @@
     "datei": "werk-10-traces.webp",
     "alt": "Gemälde „traces“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "free-spirit",
@@ -228,7 +238,8 @@
     "datei": "werk-11-free-spirit.webp",
     "alt": "Gemälde „free spirit“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "dancing-hang-traces",
@@ -247,7 +258,8 @@
     "datei": "werk-12-dancing-hang-traces.webp",
     "alt": "Gemälde „dancing hang traces“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "the-big-embrace",
@@ -266,7 +278,8 @@
     "datei": "werk-13-the-big-embrace.webp",
     "alt": "Gemälde „the big embrace“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "liberating-flow",
@@ -287,7 +300,8 @@
     "datei": "werk-14-liberating-flow.webp",
     "alt": "Gemälde „liberating flow“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "a-whole-soul",
@@ -308,7 +322,8 @@
     "datei": "werk-15-a-whole-soul.webp",
     "alt": "Gemälde „a whole soul“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "ocean-of-infinite-feelings",
@@ -332,7 +347,8 @@
     "datei": "werk-16-ocean-of-infinite-feelings.webp",
     "alt": "Gemälde „ocean of infinite feelings“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "welcoming",
@@ -349,7 +365,8 @@
     "datei": "werk-17-welcoming.webp",
     "alt": "Gemälde „welcoming“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "love",
@@ -368,7 +385,8 @@
     "datei": "werk-18-love.webp",
     "alt": "Gemälde „love“"
    }
-  ]
+  ],
+  "sichtbar": true
  },
  {
   "slug": "starting-point",
@@ -388,7 +406,8 @@
     "datei": "werk-19-starting-point.webp",
     "alt": "Gemälde „starting point“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "starting-point-2",
@@ -408,7 +427,8 @@
     "datei": "werk-20-starting-point.webp",
     "alt": "Gemälde „starting point“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "my-space",
@@ -433,7 +453,8 @@
     "datei": "werk-21-my-space.webp",
     "alt": "Gemälde „my space“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "my-space-2",
@@ -466,7 +487,8 @@
     "datei": "werk-22-my-space.webp",
     "alt": "Gemälde „my space“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "braveness",
@@ -483,7 +505,8 @@
     "datei": "werk-23-braveness.webp",
     "alt": "Gemälde „braveness“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "raindrops",
@@ -505,7 +528,8 @@
     "datei": "werk-24-raindrops.webp",
     "alt": "Gemälde „raindrops“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "silent-flow-in-paris",
@@ -527,7 +551,8 @@
     "datei": "werk-25-silent-flow-in-paris.webp",
     "alt": "Gemälde „silent flow in paris“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "cosmic-explorations",
@@ -554,7 +579,8 @@
     "datei": "werk-26-cosmic-explorations.webp",
     "alt": "Gemälde „cosmic explorations“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "childish-heart",
@@ -578,7 +604,8 @@
     "datei": "werk-27-childish-heart.webp",
     "alt": "Gemälde „childish heart“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "69",
@@ -595,7 +622,8 @@
     "datei": "werk-28-69.webp",
     "alt": "Gemälde „69“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "my-path",
@@ -615,13 +643,14 @@
   ],
   "status": "",
   "hinweis": "",
-  "empfohlen": true,
+  "empfohlen": false,
   "bilder": [
    {
     "datei": "werk-29-my-path.webp",
     "alt": "Gemälde „my path“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "holy-encounter-the-bumblebee-and-the-flo",
@@ -645,7 +674,8 @@
     "datei": "werk-30-holy-encounter-the-bumblebee-a.webp",
     "alt": "Gemälde „holy encounter - the bumblebee and the flower“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "joyful-being",
@@ -662,7 +692,8 @@
     "datei": "werk-31-joyful-being.webp",
     "alt": "Gemälde „joyful being“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "dance-the-talk",
@@ -679,7 +710,8 @@
     "datei": "werk-32-dance-the-talk.webp",
     "alt": "Gemälde „dance the talk“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "depth-over-distance",
@@ -700,7 +732,8 @@
     "datei": "werk-33-depth-over-distance.webp",
     "alt": "Gemälde „depth over distance“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "fullmoon-dance",
@@ -731,7 +764,8 @@
     "datei": "werk-34-fullmoon-dance.webp",
     "alt": "Gemälde „fullmoon dance“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "transformation",
@@ -748,7 +782,8 @@
     "datei": "werk-35-transformation.webp",
     "alt": "Gemälde „transformation“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "spaces",
@@ -768,7 +803,8 @@
     "datei": "werk-36-spaces.webp",
     "alt": "Gemälde „spaces“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "yin-yang",
@@ -799,7 +835,8 @@
     "datei": "werk-37-yin-yang.webp",
     "alt": "Gemälde „yin & yang“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "kaizen-blossom",
@@ -816,7 +853,8 @@
     "datei": "werk-38-kaizen-blossom.webp",
     "alt": "Gemälde „kaizen blossom“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "angel",
@@ -838,7 +876,8 @@
     "datei": "werk-39-angel.webp",
     "alt": "Gemälde „angel“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "mega",
@@ -855,7 +894,8 @@
     "datei": "werk-40-mega.webp",
     "alt": "Gemälde „mega“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "motherhood",
@@ -883,7 +923,8 @@
     "datei": "werk-41-motherhood.webp",
     "alt": "Gemälde „motherhood“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "spreading-wings",
@@ -908,7 +949,8 @@
     "datei": "werk-42-spreading-wings.webp",
     "alt": "Gemälde „spreading wings“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "reproduction",
@@ -927,7 +969,8 @@
     "datei": "werk-43-reproduction.webp",
     "alt": "Gemälde „reproduction“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "the-kiss",
@@ -944,7 +987,8 @@
     "datei": "werk-44-the-kiss.webp",
     "alt": "Gemälde „the kiss“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "cherry-blossom",
@@ -966,7 +1010,8 @@
     "datei": "werk-45-cherry-blossom.webp",
     "alt": "Gemälde „cherry blossom“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "transitions",
@@ -992,7 +1037,8 @@
     "datei": "werk-46-transitions.webp",
     "alt": "Gemälde „transitions“"
    }
-  ]
+  ],
+  "sichtbar": false
  },
  {
   "slug": "buddha-now",
@@ -1018,6 +1064,7 @@
     "datei": "werk-47-buddha-now.webp",
     "alt": "Gemälde „buddha now“"
    }
-  ]
+  ],
+  "sichtbar": false
  }
 ]

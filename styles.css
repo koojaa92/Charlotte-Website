@@ -3,13 +3,14 @@
 :root {
   --grund: #fcfbf9;
   --papier: #f3f1ee;
-  --tinte: #272b3a;
-  --leise: #5d6272;
-  --linie: #e4e1dc;
-  --rose: #c8397b;
+  --tinte: #46222f;
+  --leise: #6a5760;
+  --linie: #e6dfe0;
+  --rose: #8f3f5a;
   --salbei: #7d9460;
   --gold: #ecd6a6;
-  --gold-dunkel: #9a7a3c;
+  --gold-dunkel: #8a7424;
+  --ring: #e5de4f;
   --kopf: 64px;
   --sans: "Courier Prime", "Courier New", Courier, monospace;
   --serif: "Spectral", Georgia, "Times New Roman", serif;
@@ -44,7 +45,7 @@ strong { font-weight: 400; }
 /* Kopfzeile */
 .kopf { position: sticky; top: 0; z-index: 20; background: var(--grund); border-bottom: 1px solid var(--linie); }
 .kopf .wrap { display: flex; gap: 1rem; align-items: center; justify-content: space-between; min-height: var(--kopf); }
-.marke { font-family: var(--sans); font-weight: 400; font-size: 1.35rem; letter-spacing: .08em; text-decoration: none; }
+.marke { display: inline-flex; align-items: center; gap: .65rem; font-family: var(--sans); font-weight: 400; font-size: 1.35rem; letter-spacing: .08em; text-decoration: none; }
 .menue-knopf {
   font-family: var(--sans); font-weight: 400; font-size: 1rem; background: none; color: var(--tinte);
   border: 1px solid var(--tinte); border-radius: 999px; padding: .3em 1.1em; cursor: pointer;
@@ -76,7 +77,7 @@ strong { font-weight: 400; }
 .hero.klein { min-height: min(68svh, 40rem); }
 .hero-bild { position: absolute; inset: 0; }
 .hero-bild img { width: 100%; height: 100%; object-fit: cover; }
-.hero-bild::after { content: ""; position: absolute; inset: 0; background: linear-gradient(185deg, rgba(25,28,42,.30) 0%, rgba(25,28,42,.50) 40%, rgba(25,28,42,.86) 100%); }
+.hero-bild::after { content: ""; position: absolute; inset: 0; background: linear-gradient(185deg, rgba(38,16,26,.30) 0%, rgba(38,16,26,.50) 40%, rgba(38,16,26,.86) 100%); }
 .hero-inhalt { position: relative; z-index: 1; padding-block: clamp(2.5rem, 7vw, 5.5rem); color: #fff; }
 .hero-inhalt h1 { color: #fff; max-width: 16ch; margin-bottom: .45em; }
 .hero-gold { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(1.2rem, 2.6vw, 1.6rem); color: var(--gold); margin: 0 0 1.4rem; max-width: none; }
@@ -161,16 +162,16 @@ strong { font-weight: 400; }
 .verlauf img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 @media (min-width: 700px) { .verlauf { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
 
-/* Kontakt und Fuß */
-.kontakt { background: var(--tinte); color: #e8e6e2; }
+/* Kontakt und Fuß: Gemälde mit Pflaume-Schleier, wie der Header */
+.kontakt { color: #ece3e6; background: linear-gradient(rgba(38,16,26,.80), rgba(38,16,26,.90)), url("images/hero-start.webp") center / cover no-repeat; }
 .kontakt h2 { color: #fff; }
 .kontakt .gold { font-style: italic; color: var(--gold); }
 .kontakt .knopf { background: var(--gold); border-color: var(--gold); color: var(--tinte); }
 .kontakt .knopf:hover { background: #fff; border-color: #fff; }
-.fuss { padding-block: 2rem; font-family: var(--sans); font-weight: 300; font-size: .9375rem; color: var(--leise); }
+.fuss { padding-block: 1.75rem; font-family: var(--sans); font-weight: 400; font-size: .875rem; color: #cdbcc3; background: #2a121b; }
 .fuss .wrap { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
 .fuss a { text-decoration: none; margin-right: 1.5rem; }
-.fuss a:hover { color: var(--rose); }
+.fuss a:hover { color: var(--gold); }
 .entwurf-hinweis { font-size: .8125rem; background: var(--papier); color: var(--leise); padding: .35rem 0; text-align: center; font-family: var(--sans); font-weight: 300; }
 .seitenkopf { padding-block: clamp(3.5rem, 8vw, 6rem) 0; }
 .seitenkopf .lead { font-size: 1.375rem; max-width: 34rem; color: var(--leise); }
@@ -184,7 +185,7 @@ strong { font-weight: 400; }
 .werk { margin: 0; }
 .werk a { text-decoration: none; display: block; }
 .werk .rahmen { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 5; background: var(--papier); padding: 8%; }
-.werk img { max-width: 100%; max-height: 100%; width: auto; height: auto; box-shadow: 0 1px 3px rgba(39,43,58,.18); transition: transform .5s ease; }
+.werk img { max-width: 100%; max-height: 100%; width: auto; height: auto; box-shadow: 0 1px 3px rgba(70,34,47,.18); transition: transform .5s ease; }
 .werk a:hover img { transform: scale(1.03); }
 .werk figcaption { padding-top: .8rem; font-size: .9375rem; line-height: 1.45; }
 .werk figcaption strong { display: block; font-family: var(--sans); font-weight: 400; font-size: 1rem; color: var(--tinte); }
@@ -196,7 +197,7 @@ strong { font-weight: 400; }
 .zurueck a:hover { color: var(--rose); }
 .werk-raster { display: grid; gap: 2.5rem; }
 .werk-bilder figure { margin: 0 0 1.5rem; background: var(--papier); padding: 6%; }
-.werk-bilder img { margin: 0 auto; box-shadow: 0 1px 3px rgba(39,43,58,.18); max-height: 80vh; width: auto; }
+.werk-bilder img { margin: 0 auto; box-shadow: 0 1px 3px rgba(70,34,47,.18); max-height: 80vh; width: auto; }
 .werk-info h1 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
 .schlagworte { list-style: none; padding: 0; margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem .5rem; }
 .schlagworte li { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--leise); }
@@ -224,3 +225,6 @@ strong { font-weight: 400; }
 .formate a { text-decoration: none; display: block; }
 .formate a:hover img { opacity: .9; }
 .liste li strong { font-family: var(--sans); font-weight: 400; display: block; }
+
+.marke img { height: 34px; width: 34px; }
+.nav a[aria-current="page"], .nav a:hover { }

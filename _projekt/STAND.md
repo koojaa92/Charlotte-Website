@@ -34,6 +34,8 @@ Feedbackrunden: 2 Entwürfe gezeigt.
 - [ ] Englische und französische Fassung (Charlotte arbeitet dreisprachig)
 
 ## Entschieden (nicht wieder aufmachen)
+- Galerie zeigt zunächst nur die Werke von „traces“ bis „love“ (18). Die übrigen bleiben in `tools/werke.json` mit `"sichtbar": false` und lassen sich wieder einblenden.
+- Logo bleibt erhalten. Es enthält ihren Nachnamen, darum offen: Zustimmung zur Namensnennung im öffentlichen Repo.
 - Drei Angebote: Generative Painting, Coaching, Teams und Führungskräfte. Dazu Kunst als eigener Bereich.
 - Generative Painting ist Charlottes Methode und Marke.
 - Galerie wie bei einer Künstlerseite: ganze Werke, eine Seite pro Werk, Preisanfrage, mehrere Bilder pro Werk möglich.

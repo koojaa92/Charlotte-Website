@@ -13,7 +13,9 @@ Freigegeben von der Kundin am: noch nicht. Zweiter Entwurf, nach Jakobs Rückmel
 - Entscheidung Jakob: Typewriter nur für Titel und Beschriftung, ruhigere Schrift für den Lesetext.
 - Geladen über Bunny Fonts.
 
-## Farben (aus ihren Bildern)
+## Farben (aus ihrem Logo und ihren Bildern)
+- Marke: Pflaume #46222f (Tinte, Knöpfe, Fuß) und Logo-Gelb #e5de4f (die drei Ringe). Das Logo bleibt erhalten (Entscheidung Jakob). Die Ringe stehen als Zeichen im Kopf (`images/ring.svg`). Das volle Logo mit Namen kommt erst, wenn Charlotte der Namensnennung im Repo zustimmt.
+- Fuß und Kontaktbereich: Gemälde mit Pflaume-Schleier, passend zum Header.
 - Grund: #fcfbf9, Papier: #f3f1ee, Tinte: #272b3a (aus ihrem Prozessfoto)
 - Rose #c8397b (Hover, Fokus), Salbei #7d9460 (reserviert)
 - Gold #ecd6a6 nur auf dunklem Bildgrund (Header, Kontakt), Gold dunkel #9a7a3c für Zwischenzeilen auf Hell
