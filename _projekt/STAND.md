@@ -35,6 +35,8 @@ Feedbackrunden: 2 Entwürfe gezeigt.
 
 ## Entschieden (nicht wieder aufmachen)
 - Galerie zeigt zunächst nur die Werke von „traces“ bis „love“ (18). Die übrigen bleiben in `tools/werke.json` mit `"sichtbar": false` und lassen sich wieder einblenden.
+- Werkseite wie bei Kirsch: großes Hauptbild, bis zu zwei Ansichten daneben, weitere Bilder darunter, Vergrößern per Klick, Leiste zum vorigen und nächsten Werk. Kein Kontaktband auf Werkseiten.
+- Instagram und LinkedIn sind kleine Knöpfe oben rechts, noch ohne Ziel (`class="platzhalter"`). Die Adressen enthalten ihren Nachnamen, darum erst nach ihrer Zustimmung eintragen. Es gibt zwei Instagram-Konten (art.space und creative.space), Charlotte wählt.
 - Logo bleibt erhalten. Es enthält ihren Nachnamen, darum offen: Zustimmung zur Namensnennung im öffentlichen Repo.
 - Drei Angebote: Generative Painting, Coaching, Teams und Führungskräfte. Dazu Kunst als eigener Bereich.
 - Generative Painting ist Charlottes Methode und Marke.

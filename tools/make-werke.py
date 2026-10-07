@@ -76,11 +76,21 @@ def ersetze(text, marke, neu):
 
 
 def detail(w, werke, i, rahmen_vor, rahmen_nach):
-    bilder = "".join(
-        f'<figure><img src="images/{b["datei"]}" alt="{e(b.get("alt") or w["titel"])}" '
-        f'width="{bild_groesse(b["datei"])[0]}" height="{bild_groesse(b["datei"])[1]}"></figure>'
-        for b in w["bilder"]
-    )
+    figs = []
+    for b in w["bilder"]:
+        iw, ih = bild_groesse(b["datei"])
+        figs.append(
+            f'<figure><a href="images/{b["datei"]}" data-zoom aria-label="Bild vergrößern">'
+            f'<img src="images/{b["datei"]}" alt="{e(b.get("alt") or w["titel"])}" width="{iw}" height="{ih}"></a></figure>'
+        )
+    neben = figs[1:3]
+    weitere = figs[3:]
+    galerie = f'<div class="haupt">{figs[0]}</div>'
+    if neben:
+        galerie += '<div class="neben">' + "".join(neben) + "</div>"
+    if weitere:
+        galerie += '<div class="weitere">' + "".join(weitere) + "</div>"
+    klasse = "werk-galerie mit-neben" if neben else "werk-galerie"
     daten = []
     for k, v in (("Maße", w.get("masse")), ("Technik", w.get("technik")), ("Jahr", w.get("jahr")),
                  ("Hinweis", w.get("hinweis")), ("Status", w.get("status"))):
@@ -95,27 +105,31 @@ def detail(w, werke, i, rahmen_vor, rahmen_nach):
     anfrage = f'{MAIL}?subject={e("Preisanfrage: " + w["titel"]).replace(" ", "%20")}'
     knopf = "" if w.get("status") == "verkauft" else f'<div class="knoepfe"><a class="knopf" href="{anfrage}">Preis anfragen</a></div>'
     main = f'''<main>
-<section class="abschnitt werk-seite">
-<div class="wrap">
+<section class="werk-seite">
+<div class="wrap werk-schmal">
 <p class="zurueck"><a href="kunst.html">Zur Galerie</a></p>
-<div class="werk-raster">
-<div class="werk-bilder">{bilder}</div>
-<div class="werk-info">
+<div class="{klasse}">{galerie}</div>
+<div class="werk-unten">
+<div>
 <h1>{e(w["titel"])}</h1>
 <dl class="info">{"".join(daten)}</dl>
-{text}{schlag}
-{knopf}
-<p class="blaettern"><a href="werk-{vorher["slug"]}.html">Vorheriges Werk</a><a href="werk-{nachher["slug"]}.html">Nächstes Werk</a></p>
+</div>
+<div>{text}{schlag}{knopf}</div>
 </div>
 </div>
-</div>
+<nav class="werk-nav" aria-label="Werke">
+<a class="vor" href="werk-{vorher["slug"]}.html"><span class="pfeil">&#8249;</span>{e(vorher["titel"])}</a>
+<a class="weiter" href="werk-{nachher["slug"]}.html">{e(nachher["titel"])}<span class="pfeil">&#8250;</span></a>
+</nav>
 </section>
 </main>'''
     kopf = rahmen_vor
     kopf = re.sub(r"<title>.*?</title>", f"<title>{e(w['titel'])} – Charlotte (Entwurf)</title>", kopf, flags=re.S)
     kopf = re.sub(r'<meta name="description" content="[^"]*">',
                   f'<meta name="description" content="Gemälde {e(w["titel"])} von Charlotte, {e(zeile(w))}.">', kopf)
-    return kopf + main + rahmen_nach
+    # Auf Werkseiten kein Kontaktband (wie bei einer Künstlerseite): Preisanfrage steht beim Werk
+    nach = re.sub(r'<section class="abschnitt kontakt">.*?</section>\s*', "", rahmen_nach, flags=re.S)
+    return kopf + main + nach
 
 
 def main():

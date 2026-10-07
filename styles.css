@@ -44,7 +44,7 @@ strong { font-weight: 400; }
 
 /* Kopfzeile */
 .kopf { position: sticky; top: 0; z-index: 20; background: var(--grund); border-bottom: 1px solid var(--linie); }
-.kopf .wrap { display: flex; gap: 1rem; align-items: center; justify-content: space-between; min-height: var(--kopf); }
+.kopf .wrap { display: flex; gap: 1.25rem; align-items: center; justify-content: space-between; min-height: var(--kopf); }
 .marke { display: inline-flex; align-items: center; gap: .65rem; font-family: var(--sans); font-weight: 400; font-size: 1.35rem; letter-spacing: .08em; text-decoration: none; }
 .menue-knopf {
   font-family: var(--sans); font-weight: 400; font-size: 1rem; background: none; color: var(--tinte);
@@ -191,22 +191,13 @@ strong { font-weight: 400; }
 .werk figcaption strong { display: block; font-family: var(--sans); font-weight: 400; font-size: 1rem; color: var(--tinte); }
 .werk figcaption span { color: var(--leise); }
 .status { color: var(--rose); }
-.werk-seite { padding-top: clamp(2.5rem, 6vw, 4rem); }
 .zurueck { font-family: var(--sans); font-size: .9rem; margin: 0 0 2rem; }
 .zurueck a { text-decoration: none; color: var(--leise); }
 .zurueck a:hover { color: var(--rose); }
-.werk-raster { display: grid; gap: 2.5rem; }
-.werk-bilder figure { margin: 0 0 1.5rem; background: var(--papier); padding: 6%; }
-.werk-bilder img { margin: 0 auto; box-shadow: 0 1px 3px rgba(70,34,47,.18); max-height: 80vh; width: auto; }
-.werk-info h1 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
 .schlagworte { list-style: none; padding: 0; margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem .5rem; }
 .schlagworte li { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--leise); }
 .schlagworte li + li::before { content: "/"; margin-right: .5rem; color: var(--linie); }
-.blaettern { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; font-family: var(--sans); font-size: .9rem; }
-.blaettern a { text-decoration: none; color: var(--leise); }
-.blaettern a:hover { color: var(--rose); }
 .werk-text { margin-top: 1.5rem; }
-@media (min-width: 900px) { .werk-raster { grid-template-columns: 7fr 5fr; gap: 5rem; align-items: start; } .werk-info { position: sticky; top: calc(var(--kopf) + 2rem); } }
 
 /* Schritte und Prinzipien */
 .schritte { list-style: none; margin: 0; padding: 0; counter-reset: schritt; max-width: 40rem; }
@@ -228,3 +219,58 @@ strong { font-weight: 400; }
 
 .marke img { height: 34px; width: 34px; }
 .nav a[aria-current="page"], .nav a:hover { }
+
+/* Werkseite wie bei einer Kuenstlerseite: grosses Bild, kleine Ansichten, viel Weiss */
+.werk-seite { padding-top: clamp(2.5rem, 7vw, 6rem); }
+.werk-schmal { width: min(100% - 2 * var(--rand), 980px); }
+.werk-galerie { display: grid; gap: 14px; grid-template-columns: 1fr; margin-bottom: clamp(2.5rem, 6vw, 4.5rem); }
+.werk-galerie figure { margin: 0; }
+.werk-galerie a { display: block; cursor: zoom-in; }
+.werk-galerie .haupt img { width: auto; max-width: 100%; max-height: 78vh; margin-inline: auto; }
+.werk-galerie .neben, .werk-galerie .weitere { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+.werk-galerie .neben img, .werk-galerie .weitere img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+@media (min-width: 900px) {
+  .werk-galerie { gap: 20px; }
+  .werk-galerie.mit-neben { grid-template-columns: 3fr 1fr; }
+  .werk-galerie.mit-neben .haupt img { margin-inline: 0; }
+  .werk-galerie.mit-neben .neben { grid-template-columns: 1fr; align-content: start; gap: 20px; }
+  .werk-galerie.mit-neben .neben img { aspect-ratio: 231 / 280; }
+  .werk-galerie .weitere { grid-column: 1 / -1; gap: 20px; }
+}
+.werk-unten { display: grid; gap: 2rem; padding-bottom: clamp(3rem, 7vw, 5rem); }
+@media (min-width: 900px) { .werk-unten { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.werk-unten h1 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); }
+.werk-nav { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--linie); font-family: var(--sans); }
+.werk-nav a { display: flex; align-items: center; gap: .75rem; padding: 1.75rem var(--rand); text-decoration: none; font-size: 1rem; color: var(--leise); }
+.werk-nav a:hover { color: var(--rose); }
+.werk-nav .weiter { justify-content: flex-end; text-align: right; border-left: 1px solid var(--linie); }
+.werk-nav .pfeil { font-size: 2rem; line-height: 1; }
+@media (min-width: 900px) { .werk-nav a { padding-inline: max(var(--rand), calc((100vw - 980px) / 2)); } }
+
+/* Vergroessern */
+.zoom { position: fixed; inset: 0; z-index: 50; background: rgba(38,16,26,.94); display: flex; align-items: center; justify-content: center; padding: 3rem 1rem; }
+.zoom img { max-width: 100%; max-height: 100%; width: auto; height: auto; box-shadow: 0 2px 30px rgba(0,0,0,.4); }
+.zoom button { position: absolute; background: none; border: 0; color: #fff; font-size: 2.5rem; line-height: 1; cursor: pointer; padding: .5rem 1rem; font-family: var(--sans); }
+.zoom .zu { top: .5rem; right: .5rem; }
+.zoom .vor { left: .25rem; top: 50%; transform: translateY(-50%); }
+.zoom .weiter { right: .25rem; top: 50%; transform: translateY(-50%); }
+.zoom button:hover { color: var(--gold); }
+
+/* Kopfzeile: Marke links, rechts Menue, Soziales */
+.marke { margin-right: auto; }
+.nav { order: 1; } .soziales { order: 2; } .menue-knopf { order: 3; }
+.soziales { display: flex; gap: .5rem; }
+.soziales a { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--linie); border-radius: 50%; color: var(--tinte); transition: border-color .2s, color .2s; }
+.soziales a:hover { border-color: var(--rose); color: var(--rose); }
+.soziales svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.soziales circle[r=".6"] { fill: currentColor; }
+@media (min-width: 900px) { .nav, .nav.offen { margin-right: .5rem; } }
+@media (max-width: 600px) {
+  .kopf .wrap { gap: .6rem; }
+  .marke { font-size: 1.1rem; letter-spacing: .02em; gap: .5rem; }
+  .marke img { width: 26px; height: 26px; }
+  .soziales { gap: .35rem; }
+  .soziales a { width: 28px; height: 28px; }
+  .soziales svg { width: 15px; height: 15px; }
+  .menue-knopf { padding: .25em .85em; font-size: .9rem; }
+}
