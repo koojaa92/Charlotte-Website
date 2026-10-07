@@ -1,38 +1,37 @@
-# [Projekt]: Designsystem
+# Charlotte: Designsystem (Entwurf, lebendig)
 
-Verbindlich für alle Seiten. Abgeleitet aus den Referenzseiten (siehe GRUNDLAGE.md), keine Kopie.
-Freigegeben von der Kundin am: [Datum]. Gewählte Hero-Variante: [Nummer, Screenshot]
+Freigegeben von der Kundin am: noch nicht. Erster Entwurf ohne Interview.
 
 ## Gefühl
-- Drei Wörter: ...
-- Tempo und Ruhe: ...
+- Hell, bewegt, ehrlich. Das Bild trägt, die Schrift hält sich zurück.
+- Ruhig im Tempo, mit einzelnen kräftigen Farbspuren in den Bildern.
 
 ## Schrift
-- Überschriften: [Schrift], Größenstufen: ...
-- Fließtext: [Schrift], Größe, Zeilenhöhe: ...
-- Laden: selbst gehostet oder Bunny Fonts
+- Überschriften: Bricolage Grotesque, 700, enge Laufweite.
+- Fließtext: Newsreader, 19 px, Zeilenhöhe 1,6.
+- Geladen über Bunny Fonts.
 
 ## Farben
-- Grund: ...
-- Papier: ...
-- Akzent: ...
+- Grund: #fbfbfa (kühles Galerieweiß)
+- Papier: #eceef4
+- Tinte: #14161b
+- Akzent: #2437c9 (Ultramarin), Pigment-Gelb #f2b134 nur für den Entwurfshinweis und in Bildern
 
 ## Abstände und Rhythmus
-- Abstand zwischen Abschnitten: ...
-- Abstand Überschrift zu Text: ...
-- Maximale Textbreite: ...
+- Abschnitte eng: 2,25 rem mobil, 3 rem Desktop.
+- Textbreite maximal 62 Zeichen.
 
 ## Bilder
-- Format pro Bereich: ...
-- Farbstimmung: ...
+- Platzhalter: abstrakte Farbspuren als SVG. Echte Fotos ersetzen sie 1:1.
 - Keine KI-Bilder von Menschen.
 
 ## Bewegung
-- [keine / sanftes Einblenden / mehr]
+- Keine.
 
 ## Dos und Don'ts
-- Do: ...
-- Don't: ...
+- Do: Bilder groß, Galerie wie eine Wand.
+- Don't: Karten-Raster, Pfeile an Links, Großbuchstaben-Labels.
 
 ## Bewusst nicht übernommen (aus den Referenzen)
-- ...
+- Kirsch-Galerie: Preisanfrage pro Werk und Sprachwechsel kommen später.
+- Freibaden: Illustrationen und Formulare.

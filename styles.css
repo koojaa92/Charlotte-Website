@@ -1,0 +1,220 @@
+@import url("https://fonts.bunny.net/css?family=bricolage-grotesque:500,700|newsreader:400,400i,600");
+
+:root {
+  --grund: #fbfbfa;
+  --tinte: #14161b;
+  --papier: #eceef4;
+  --akzent: #2437c9;
+  --pigment: #f2b134;
+  --linie: #d9dbe3;
+  --kopf: 64px;
+  --kopf-schrift: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --text-schrift: "Newsreader", Georgia, "Times New Roman", serif;
+  --breite: 1180px;
+  --rand: 20px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--grund);
+  color: var(--tinte);
+  font-family: var(--text-schrift);
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--akzent); outline-offset: 3px; }
+
+h1, h2, h3 {
+  font-family: var(--kopf-schrift);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 .5em;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2.5rem, 7vw, 5.25rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+h3 { font-size: 1.375rem; letter-spacing: -0.01em; }
+p { margin: 0 0 1em; text-wrap: pretty; max-width: 62ch; }
+
+.wrap { width: min(100% - 2 * var(--rand), var(--breite)); margin-inline: auto; }
+
+/* Kopfzeile */
+.kopf {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--grund);
+  border-bottom: 1px solid var(--linie);
+}
+.kopf .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: var(--kopf);
+}
+.marke {
+  font-family: var(--kopf-schrift); font-weight: 700; font-size: 1.5rem;
+  letter-spacing: -0.02em; text-decoration: none;
+}
+.menue-knopf {
+  font: inherit; font-family: var(--kopf-schrift); font-weight: 500;
+  background: none; border: 1px solid var(--tinte); border-radius: 999px;
+  padding: .35em 1em; cursor: pointer; color: var(--tinte);
+}
+.nav { display: none; }
+.nav.offen {
+  display: block; position: absolute; left: 0; right: 0; top: 100%;
+  background: var(--grund); border-bottom: 1px solid var(--linie);
+  padding: .5rem var(--rand) 1rem;
+}
+.nav a {
+  display: block; padding: .6em 0; text-decoration: none;
+  font-family: var(--kopf-schrift); font-weight: 500; font-size: 1.125rem;
+}
+.nav a[aria-current="page"] { color: var(--akzent); }
+.nav a:hover { color: var(--akzent); }
+
+@media (min-width: 860px) {
+  .menue-knopf { display: none; }
+  .nav, .nav.offen {
+    display: flex; gap: 2rem; position: static; padding: 0; border: 0; background: none;
+  }
+  .nav a { padding: 0; font-size: 1.0625rem; }
+}
+
+/* Knöpfe */
+.knopf {
+  display: inline-block; text-decoration: none;
+  font-family: var(--kopf-schrift); font-weight: 500; font-size: 1.0625rem;
+  background: var(--akzent); color: #fff; border: 2px solid var(--akzent);
+  border-radius: 999px; padding: .7em 1.5em;
+}
+.knopf:hover { background: var(--tinte); border-color: var(--tinte); }
+.knopf.leise { background: transparent; color: var(--tinte); border-color: var(--tinte); }
+.knopf.leise:hover { background: var(--tinte); color: #fff; }
+.knoepfe { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+
+/* Abschnitte */
+.abschnitt { padding-block: 3rem; }
+.abschnitt.grau { background: var(--papier); }
+.abschnitt-kopf { margin-bottom: 1.5rem; }
+.abschnitt-kopf p { color: #3b3f4a; }
+
+/* Startseite: Hero */
+.hero { padding-block: 1.5rem 2rem; }
+.hero .wrap { display: grid; gap: 1.5rem; }
+.hero-text { align-self: center; }
+.hero-text .lead { font-size: 1.375rem; line-height: 1.45; }
+.hero-bilder {
+  display: grid; gap: 10px;
+  grid-template-columns: 1fr 1fr; grid-template-rows: auto auto;
+}
+.hero-bilder img { width: 100%; height: 100%; object-fit: cover; }
+.hero-bilder .gross { grid-row: span 2; }
+.hero-bilder figure, .bild-kachel { margin: 0; position: relative; overflow: hidden; background: var(--papier); }
+.hero-bilder figure { min-height: 140px; }
+
+@media (min-width: 860px) {
+  .hero { padding-block: 2rem 2.5rem; }
+  .hero .wrap {
+    grid-template-columns: 1fr 1.05fr; gap: 3rem;
+    min-height: calc(100svh - var(--kopf) - 4rem);
+  }
+}
+
+/* Drei Wege */
+.weg {
+  display: grid; gap: 1.25rem; padding-block: 1.75rem;
+  border-top: 1px solid var(--tinte);
+}
+.weg:last-child { border-bottom: 1px solid var(--tinte); }
+.weg .bild { aspect-ratio: 4 / 3; overflow: hidden; background: var(--papier); }
+.weg .bild img { width: 100%; height: 100%; object-fit: cover; }
+.weg .text { align-self: center; }
+.weg h3 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+.weg .kurz { font-family: var(--kopf-schrift); font-weight: 500; color: var(--akzent); margin-bottom: .5rem; }
+@media (min-width: 860px) {
+  .weg { grid-template-columns: 1.2fr 1fr; gap: 3rem; }
+  .weg:nth-child(even) { grid-template-columns: 1fr 1.2fr; }
+  .weg:nth-child(even) .bild { order: 2; }
+}
+
+/* Projekte */
+.raster {
+  display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+}
+.raster figure { margin: 0; }
+.raster .bild-kachel { aspect-ratio: 1; }
+.raster .hoch .bild-kachel { aspect-ratio: 4 / 5; }
+.raster .breit { grid-column: span 2; }
+.raster .breit .bild-kachel { aspect-ratio: 3 / 2; }
+.raster img { width: 100%; height: 100%; object-fit: cover; }
+.raster figcaption { font-size: .9375rem; color: #4a4e5a; padding-top: .4rem; }
+@media (min-width: 860px) {
+  .raster { grid-template-columns: repeat(4, 1fr); }
+  .raster .gross { grid-column: span 2; grid-row: span 2; }
+  .raster .gross .bild-kachel { aspect-ratio: auto; height: calc(100% - 2rem); }
+}
+
+/* Zitat */
+.zitat { font-family: var(--kopf-schrift); font-weight: 500; font-size: clamp(1.5rem, 3.6vw, 2.5rem); line-height: 1.2; letter-spacing: -0.015em; max-width: 24ch; margin: 0 0 1rem; text-wrap: balance; }
+.zitat-quelle { font-size: 1rem; color: #3b3f4a; margin: 0; }
+
+/* Zweispaltig mit Bild */
+.zwei { display: grid; gap: 1.5rem; align-items: center; }
+.zwei .bild-kachel { aspect-ratio: 4 / 5; }
+.zwei .bild-kachel img { width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 860px) { .zwei { grid-template-columns: 5fr 6fr; gap: 3.5rem; } .zwei.umgekehrt { grid-template-columns: 6fr 5fr; } .zwei.umgekehrt .bild-kachel { order: 2; } }
+
+/* Unterseiten */
+.seitenkopf { padding-block: 2.5rem 1.5rem; }
+.seitenkopf .lead { font-size: 1.375rem; line-height: 1.45; max-width: 40ch; }
+.band { aspect-ratio: 16 / 7; overflow: hidden; background: var(--papier); }
+.band img { width: 100%; height: 100%; object-fit: cover; }
+.info {
+  display: grid; gap: 0; border-top: 1px solid var(--tinte); margin: 0;
+}
+.info div { display: grid; gap: .1rem; padding: .75rem 0; border-bottom: 1px solid var(--linie); }
+.info dt { font-family: var(--kopf-schrift); font-weight: 700; }
+.info dd { margin: 0; }
+@media (min-width: 700px) { .info div { grid-template-columns: 11rem 1fr; gap: 1.5rem; } }
+.liste { padding: 0; margin: 0; list-style: none; border-top: 1px solid var(--tinte); }
+.liste li { padding: .85rem 0; border-bottom: 1px solid var(--linie); }
+.liste strong { font-family: var(--kopf-schrift); font-size: 1.125rem; }
+.liste span { display: block; color: #3b3f4a; }
+.spalten { display: grid; gap: 2rem; }
+@media (min-width: 860px) { .spalten { grid-template-columns: 1fr 1fr; gap: 3.5rem; } }
+
+/* Galerie */
+.galerie { columns: 2; column-gap: 10px; }
+.galerie figure { margin: 0 0 14px; break-inside: avoid; }
+.galerie img { width: 100%; height: auto; }
+.galerie figcaption { padding-top: .35rem; font-size: .9375rem; line-height: 1.35; }
+.galerie figcaption strong { display: block; font-family: var(--kopf-schrift); font-size: 1rem; }
+.galerie figcaption span { color: #4a4e5a; }
+@media (min-width: 860px) { .galerie { columns: 3; column-gap: 18px; } }
+
+/* Platzhalter-Hinweis */
+.platzhalter-hinweis {
+  font-size: .9375rem; background: var(--pigment); color: var(--tinte);
+  padding: .4rem 0; text-align: center; font-family: var(--kopf-schrift); font-weight: 500;
+}
+
+/* Kontakt und Fuß */
+.kontakt { background: var(--tinte); color: #fff; }
+.kontakt .knopf { background: #fff; color: var(--tinte); border-color: #fff; }
+.kontakt .knopf:hover { background: var(--pigment); border-color: var(--pigment); }
+.kontakt p { color: #d7d9e2; }
+.fuss { padding-block: 1.5rem; font-size: 1rem; border-top: 1px solid var(--linie); }
+.fuss .wrap { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
+.fuss a { text-decoration: none; margin-right: 1.25rem; }
+.fuss a:hover { text-decoration: underline; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Globale Abstandsregel (am Ende, eng halten) */
+.abschnitt { padding-block: 2.25rem; }
+@media (min-width: 860px) { .abschnitt { padding-block: 3rem; } }

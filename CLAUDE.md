@@ -3,11 +3,12 @@
 Gilt für jede Sitzung in diesem Repo. Lies zu Beginn auch `_projekt/STAND.md`. Bei einem neuen Projekt zusätzlich `_werkstatt/HANDBUCH.md`.
 
 ## Projekt
-- Website für: [Name], [Angebot] in [Stadt]
-- Repo: [owner/repo]. Live ist der Branch `main` (GitHub Pages).
-- Domain: [domain], DNS bei [Anbieter]. E-Mail an der Domain: [ja/nein]. MX- und TXT-Einträge nie ändern.
-- Website-Typ und Ziel: [z. B. Angebots-Website mit Terminen / One-Pager / Portfolio]. Funktionen: [...]
-- Aktuelle Phase: [0–7, siehe Handbuch Abschnitt 5]
+- Website für: Charlotte (nur Vorname im Repo), Generative Painting, Beratung und Kunst, Freiburg.
+- Repo: koojaa92/Charlotte-Website. Live ist der Branch `main` (GitHub Pages).
+- Domain: [offen], DNS bei [offen]. E-Mail an der Domain: [offen]. MX- und TXT-Einträge nie ändern.
+- Website-Typ und Ziel: Startseite mit vier Unterseiten (Generative Painting, Beratung, Kunst, Über mich). Zeigt auf einen Blick, was Charlotte macht, mit vielen Bildern echter Projekte und einer Galerie. Funktionen: Mail-Kontakt, Galerie.
+- Aktuelle Phase: 0. Bewusst vorgezogener Entwurf mit Platzhalterbildern, damit Jakob und Charlotte etwas Sichtbares haben. Interview und Grundlage stehen aus.
+- Der Nachname steht nirgends im Repo (auch nicht in Mailadressen oder Links), bis Charlotte zustimmt.
 
 ## Arbeitsweise
 - Sprache: Deutsch, Du-Form, sofern unten nicht anders festgelegt.
