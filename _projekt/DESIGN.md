@@ -1,37 +1,42 @@
 # Charlotte: Designsystem (Entwurf, lebendig)
 
-Freigegeben von der Kundin am: noch nicht. Erster Entwurf ohne Interview.
+Freigegeben von der Kundin am: noch nicht. Zweiter Entwurf, nach Jakobs Rückmeldung: erster Stand war zu blockig und zu eng.
 
 ## Gefühl
-- Ruhig, klar, künstlerisch tief. Das Bild trägt, die Schrift hält sich zurück.
-- Ruhig im Tempo, mit einzelnen kräftigen Farbspuren in den Bildern.
+- Ruhig, klar, fein, künstlerisch tief. Das Bild trägt, die Schrift hält sich zurück.
+- Viel Raum, dünne Linien, keine Kästen.
 
 ## Schrift
-- Überschriften: Bricolage Grotesque, 700, enge Laufweite.
-- Fließtext: Newsreader, 19 px, Zeilenhöhe 1,6.
+- Überschriften: Jost, 300, leicht gesperrte Marke.
+- Fließtext: Spectral, 300, 19 px, Zeilenhöhe 1,75, Zeilenlänge um 36 rem.
+- Goldene Zeile im Header: Spectral kursiv.
 - Geladen über Bunny Fonts.
 
-## Farben
-- Grund: #fbfbfa (kühles Galerieweiß)
-- Papier: #eceef4
-- Tinte: #14161b
-- Akzent: #2c3e7a (tiefes Schieferblau), ruhig. Farbe kommt aus Charlottes Bildern.
+## Farben (aus ihren Bildern)
+- Grund: #fcfbf9, Papier: #f3f1ee, Tinte: #272b3a (aus ihrem Prozessfoto)
+- Rose #c8397b (Hover, Fokus), Salbei #7d9460 (reserviert)
+- Gold #ecd6a6 nur auf dunklem Bildgrund (Header, Kontakt), Gold dunkel #9a7a3c für Zwischenzeilen auf Hell
 
 ## Abstände und Rhythmus
-- Abschnitte eng: 2,25 rem mobil, 3 rem Desktop.
-- Textbreite maximal 62 Zeichen.
+- Abschnitte großzügig: `--luft` = 4,5 bis 8,5 rem.
+- Maximale Textbreite 36 rem. Seitenbreite 1120 px.
+
+## Aufbau
+- Jede Seite beginnt mit einem ganzen Foto im Header, Titel weiß, goldene Zeile darunter (angelehnt an Essential Guidance).
+- Werke in der Galerie immer ganz, nie beschnitten, mit Titel, Maßen und Technik.
 
 ## Bilder
-- Echte Bilder von ihrer bisherigen Website (Werke, Porträts, Malprozess), verkleinert als WebP. Retreat- und Kundenfotos mit erkennbaren Personen sind nicht im Repo.
+- Echte Bilder von ihrer bisherigen Website, verkleinert als WebP. Keine Fotos von Kundschaft oder Retreat-Teilnehmenden.
 - Keine KI-Bilder von Menschen.
 
 ## Bewegung
-- Keine.
+- Nur ein sanftes Zoomen der Wege-Bilder bei Hover.
 
 ## Dos und Don'ts
-- Do: Bilder groß, Galerie wie eine Wand.
-- Don't: Karten-Raster, Pfeile an Links, Großbuchstaben-Labels.
+- Do: Luft, dünne Schrift, ganze Bilder.
+- Don't: Kästen, Karten-Raster, fette Schrift, Pfeile an Links, Großbuchstaben-Labels.
 
-## Bewusst nicht übernommen (aus den Referenzen)
+## Bewusst nicht übernommen
 - Kirsch-Galerie: Preisanfrage pro Werk und Sprachwechsel kommen später.
 - Freibaden: Illustrationen und Formulare.
+- Essential Guidance: Schriften (Crimson Pro, Karla) und Nachtblau, damit Charlotte eigenständig wirkt.

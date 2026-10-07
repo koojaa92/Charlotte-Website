@@ -35,5 +35,6 @@ Feedbackrunden: 0 von [offen].
 - Seitenstruktur: Startseite, Generative Painting, Beratung, Kunst, Über mich.
 - Galerie in der Anmutung der Kirsch-Galerie: viel Weißraum, Werke im Vordergrund, Titel und Technik darunter.
 - Nur Vorname im Repo.
-- Gestaltung: ruhig, klar, künstlerisch tief; Entwurf folgt der Struktur der alten Website, modern und entschlackt.
+- Gestaltung: ruhig, klar, fein, künstlerisch tief; ganze Fotos im Header mit goldener Zeile, viel Raum. Struktur folgt der alten Website, modern und entschlackt.
+- Erster Entwurf (blockig, eng, Ultramarin) wurde verworfen.
 - Dieser Entwurf weicht bewusst von der Regel „vor Phase 4 kein Design“ ab, auf Jakobs Wunsch.

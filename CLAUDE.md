@@ -7,7 +7,7 @@ Gilt für jede Sitzung in diesem Repo. Lies zu Beginn auch `_projekt/STAND.md`. 
 - Repo: koojaa92/Charlotte-Website. Live ist der Branch `main` (GitHub Pages).
 - Domain: [offen], DNS bei [offen]. E-Mail an der Domain: [offen]. MX- und TXT-Einträge nie ändern.
 - Website-Typ und Ziel: Startseite mit vier Unterseiten (Generative Painting, Beratung, Kunst, Über mich). Zeigt auf einen Blick, was Charlotte macht, mit vielen Bildern echter Projekte und einer Galerie. Funktionen: Mail-Kontakt, Galerie.
-- Aktuelle Phase: 0. Bewusst vorgezogener Entwurf mit Platzhalterbildern, damit Jakob und Charlotte etwas Sichtbares haben. Interview und Grundlage stehen aus.
+- Aktuelle Phase: 0. Bewusst vorgezogener Entwurf auf Grundlage ihrer bisherigen Website (echte Bilder, gekürzte Texte), damit Jakob und Charlotte etwas Sichtbares haben. Interview und Grundlage stehen aus.
 - Der Nachname steht nirgends im Repo (auch nicht in Mailadressen oder Links), bis Charlotte zustimmt.
 
 ## Arbeitsweise
@@ -27,8 +27,8 @@ Gilt für jede Sitzung in diesem Repo. Lies zu Beginn auch `_projekt/STAND.md`. 
 - Entwickeln auf eigenem Branch, live mit `git push origin <branch>:main`.
 - Links relativ, ohne führenden Schrägstrich (die Seite liegt bis zur Domain unter `/<repo>/`). Keine `.nojekyll`-Datei.
 - Bis zum Live-Gang `noindex` in allen HTML-Dateien und `Disallow: /` in `robots.txt`. Vor dem Live-Gang beides entfernen.
-- Originalbilder nie ins Repo, nur verkleinerte Web-Versionen.
-- Abstände zwischen Abschnitten eng halten. Globale Regel am Ende von `styles.css`.
+- Originalbilder nie ins Repo, nur verkleinerte Web-Versionen. Keine Fotos von Kundinnen, Kunden oder Retreat-Teilnehmenden ohne Einverständnis.
+- Abstände zwischen Abschnitten bei Charlotte großzügig (Entscheidung von Jakob, anders als bei Essential Guidance). Variable `--luft` in `styles.css`.
 - Schriften selbst hosten oder über Bunny Fonts, nie direkt von Google Fonts.
 - Formulare nur, wenn sie wirklich senden. Sonst Mail-Link.
 - FAQ sichtbar und als FAQPage-JSON-LD im `<head>`, beides angleichen. FAQ-Abschnitte mit grauem Hintergrund.
