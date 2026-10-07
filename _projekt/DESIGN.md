@@ -7,9 +7,10 @@ Freigegeben von der Kundin am: noch nicht. Zweiter Entwurf, nach Jakobs Rückmel
 - Viel Raum, dünne Linien, keine Kästen.
 
 ## Schrift
-- Überschriften: Jost, 300, leicht gesperrte Marke.
+- Titel und Beschriftungen: Courier Prime (Typewriter, Teil ihrer Marke), 400, enge Laufweite bei großen Titeln.
 - Fließtext: Spectral, 300, 19 px, Zeilenhöhe 1,75, Zeilenlänge um 36 rem.
 - Goldene Zeile im Header: Spectral kursiv.
+- Entscheidung Jakob: Typewriter nur für Titel und Beschriftung, ruhigere Schrift für den Lesetext.
 - Geladen über Bunny Fonts.
 
 ## Farben (aus ihren Bildern)
@@ -40,3 +41,6 @@ Freigegeben von der Kundin am: noch nicht. Zweiter Entwurf, nach Jakobs Rückmel
 - Kirsch-Galerie: Preisanfrage pro Werk und Sprachwechsel kommen später.
 - Freibaden: Illustrationen und Formulare.
 - Essential Guidance: Schriften (Crimson Pro, Karla) und Nachtblau, damit Charlotte eigenständig wirkt.
+
+## Galerie (nach Kirsch-Galerie)
+- Werke ganz, auf ruhigem Grund (Papier), mit Titel, Maßen und Technik darunter. Jedes Werk hat eine eigene Seite mit großen Bildern, Daten, Schlagworten, Preisanfrage und Blättern zum vorigen und nächsten Werk.

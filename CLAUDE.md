@@ -6,7 +6,8 @@ Gilt für jede Sitzung in diesem Repo. Lies zu Beginn auch `_projekt/STAND.md`. 
 - Website für: Charlotte (nur Vorname im Repo), Generative Painting, Beratung und Kunst, Freiburg.
 - Repo: koojaa92/Charlotte-Website. Live ist der Branch `main` (GitHub Pages).
 - Domain: [offen], DNS bei [offen]. E-Mail an der Domain: [offen]. MX- und TXT-Einträge nie ändern.
-- Website-Typ und Ziel: Startseite mit vier Unterseiten (Generative Painting, Beratung, Kunst, Über mich). Zeigt auf einen Blick, was Charlotte macht, mit vielen Bildern echter Projekte und einer Galerie. Funktionen: Mail-Kontakt, Galerie.
+- Website-Typ und Ziel: Startseite mit Unterseiten Generative Painting (Methode und Marke), Coaching, Teams und Führungskräfte, Kunst (Galerie wie bei einer Künstlerseite, eine Seite pro Werk), Über mich. Zeigt auf einen Blick, was Charlotte macht, wer sie ist und wo ihre Kunst ist, mit vielen Bildern echter Projekte. Funktionen: Mail-Kontakt (Erstgespräch, Preisanfrage), Galerie.
+- Pflege: Charlotte lernt, die Seite mit Claude Code selbst zu pflegen (wie Jakob). Jakob pflegt teilweise für sie. Darum alles einfach, ohne Build-Schritt und mit klaren Quellen (siehe Werke).
 - Aktuelle Phase: 0. Bewusst vorgezogener Entwurf auf Grundlage ihrer bisherigen Website (echte Bilder, gekürzte Texte), damit Jakob und Charlotte etwas Sichtbares haben. Interview und Grundlage stehen aus.
 - Der Nachname steht nirgends im Repo (auch nicht in Mailadressen oder Links), bis Charlotte zustimmt.
 
@@ -19,6 +20,12 @@ Gilt für jede Sitzung in diesem Repo. Lies zu Beginn auch `_projekt/STAND.md`. 
 - Bei Unklarem eine präzise Rückfrage statt drei Annahmen.
 - Ehrlich sagen, was nicht geprüft werden konnte (echtes iPhone, echte Schrift).
 - Entscheidungen sofort in diese Datei oder `_projekt/STAND.md` schreiben, nicht nur im Chat lassen.
+
+## Werke (Galerie)
+- Werke nur in `tools/werke.json` ändern, danach `python3 tools/make-werke.py` ausführen. Das Skript baut die Galerie in `kunst.html` (zwischen den Marken `werke:start` und `werke:end`), die empfohlenen Werke auf der Startseite (`empfohlen:start`, `empfohlen:end`), eine Seite `werk-<slug>.html` pro Werk und die `sitemap.xml`. Werkseiten und Galerie nie von Hand ändern.
+- Ein Eintrag hat: `slug` (nur Kleinbuchstaben und Bindestriche, einmalig), `titel`, `jahr`, `masse`, `technik`, `schlagworte` (Liste), optional `text`, `status` (leer, `verkauft`), `hinweis`, `empfohlen` (true/false) und `bilder` (Liste mit `datei` und `alt`). Mehrere Bilder pro Werk: weitere Einträge in `bilder`, die Seite zeigt sie untereinander (Gesamtansicht, Detail, im Raum).
+- Neue Bilder als WebP, längste Seite höchstens 1000 px, in `images/` ablegen. Erstes Bild in `bilder` ist das Galerie-Bild.
+- Preisanfrage geht per Mail-Link mit dem Werktitel im Betreff.
 
 ## Technik
 - Statisches HTML, eine `styles.css`, eine `main.js`. Kein Framework, kein Build-Schritt.
@@ -39,6 +46,8 @@ Gilt für jede Sitzung in diesem Repo. Lies zu Beginn auch `_projekt/STAND.md`. 
 - `_projekt/DESIGN.md` ist ein lebendiges Stilbuch, kein starres Regelwerk. Es ist der Ausgangspunkt, Abweichungen sind erwünscht.
 - Was Jakob oder die Kundin bewusst anders entscheiden, gilt. Nie zurückdrehen und nie in einen Standard- oder Skill-Look zurückfallen. Die Entscheidung sofort in `DESIGN.md` nachtragen, damit sie bleibt.
 - Vor jedem Bericht: Screenshots bei 390 und 1280 px, selbst prüfen.
+- Schrift: Titel und Beschriftungen in Typewriter (Courier Prime, passend zu ihrer Marke), Fließtext in Spectral. Nur so, sofern Charlotte nichts anderes festlegt.
+- Textquellen: Alles, was Charlotte gesagt oder geschrieben hat, trennen von Vorschlägen. Vorschläge von Claude tragen im HTML `class="vorschlag"` (goldene Linie links). Vor dem Live-Gang gibt Charlotte jeden Vorschlag frei, ändert ihn oder streicht ihn, dann wird die Klasse entfernt. Die Quellen stehen in `_projekt/TEXTE.md`.
 - Skill: `frontend-design`. Keine weiteren Skills ohne Rückfrage installieren.
 - Texte nie ungefragt ändern, auch wenn ein Skill das nahelegt.
 - Keine KI-Bilder von Menschen.

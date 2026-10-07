@@ -1,4 +1,4 @@
-@import url("https://fonts.bunny.net/css?family=jost:300,400,500|spectral:300,300i,400,400i");
+@import url("https://fonts.bunny.net/css?family=courier-prime:400,700|spectral:300,300i,400,400i");
 
 :root {
   --grund: #fcfbf9;
@@ -11,7 +11,7 @@
   --gold: #ecd6a6;
   --gold-dunkel: #9a7a3c;
   --kopf: 64px;
-  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --sans: "Courier Prime", "Courier New", Courier, monospace;
   --serif: "Spectral", Georgia, "Times New Roman", serif;
   --breite: 1120px;
   --rand: 24px;
@@ -30,12 +30,12 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
 
 h1, h2, h3 {
-  font-family: var(--sans); font-weight: 300; color: var(--tinte);
+  font-family: var(--sans); font-weight: 400; color: var(--tinte);
   line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 .6em; text-wrap: balance;
 }
-h1 { font-size: clamp(2.6rem, 7.2vw, 5.4rem); line-height: 1.02; letter-spacing: -0.02em; }
-h2 { font-size: clamp(1.9rem, 4vw, 3rem); }
-h3 { font-size: 1.5rem; font-weight: 400; letter-spacing: 0; }
+h1 { font-size: clamp(2.2rem, 6vw, 4.4rem); line-height: 1.08; letter-spacing: -0.04em; }
+h2 { font-size: clamp(1.6rem, 3.4vw, 2.5rem); letter-spacing: -0.03em; }
+h3 { font-size: 1.3rem; font-weight: 400; letter-spacing: -0.02em; }
 p { margin: 0 0 1.2em; max-width: 36rem; text-wrap: pretty; }
 strong { font-weight: 400; }
 
@@ -43,8 +43,8 @@ strong { font-weight: 400; }
 
 /* Kopfzeile */
 .kopf { position: sticky; top: 0; z-index: 20; background: var(--grund); border-bottom: 1px solid var(--linie); }
-.kopf .wrap { display: flex; align-items: center; justify-content: space-between; min-height: var(--kopf); }
-.marke { font-family: var(--sans); font-weight: 300; font-size: 1.5rem; letter-spacing: .14em; text-decoration: none; }
+.kopf .wrap { display: flex; gap: 1rem; align-items: center; justify-content: space-between; min-height: var(--kopf); }
+.marke { font-family: var(--sans); font-weight: 400; font-size: 1.35rem; letter-spacing: .08em; text-decoration: none; }
 .menue-knopf {
   font-family: var(--sans); font-weight: 400; font-size: 1rem; background: none; color: var(--tinte);
   border: 1px solid var(--tinte); border-radius: 999px; padding: .3em 1.1em; cursor: pointer;
@@ -55,8 +55,8 @@ strong { font-weight: 400; }
 .nav a[aria-current="page"], .nav a:hover { color: var(--rose); }
 @media (min-width: 900px) {
   .menue-knopf { display: none; }
-  .nav, .nav.offen { display: flex; gap: 2.5rem; position: static; padding: 0; border: 0; background: none; }
-  .nav a { padding: 0 0 .15em; font-size: 1rem; border-bottom: 1px solid transparent; }
+  .nav, .nav.offen { display: flex; gap: 2rem; position: static; padding: 0; border: 0; background: none; }
+  .nav a { padding: 0 0 .15em; font-size: .9rem; border-bottom: 1px solid transparent; }
   .nav a[aria-current="page"], .nav a:hover { border-bottom-color: var(--rose); color: var(--tinte); }
 }
 
@@ -78,7 +78,7 @@ strong { font-weight: 400; }
 .hero-bild img { width: 100%; height: 100%; object-fit: cover; }
 .hero-bild::after { content: ""; position: absolute; inset: 0; background: linear-gradient(185deg, rgba(25,28,42,.30) 0%, rgba(25,28,42,.50) 40%, rgba(25,28,42,.86) 100%); }
 .hero-inhalt { position: relative; z-index: 1; padding-block: clamp(2.5rem, 7vw, 5.5rem); color: #fff; }
-.hero-inhalt h1 { color: #fff; max-width: 14ch; margin-bottom: .45em; }
+.hero-inhalt h1 { color: #fff; max-width: 16ch; margin-bottom: .45em; }
 .hero-gold { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(1.2rem, 2.6vw, 1.6rem); color: var(--gold); margin: 0 0 1.4rem; max-width: none; }
 .hero-text { color: #eceae6; max-width: 32rem; font-size: 1.1875rem; }
 .hero .knopf { background: var(--gold); border-color: var(--gold); color: var(--tinte); }
@@ -101,8 +101,8 @@ strong { font-weight: 400; }
 .weg .bild { overflow: hidden; background: var(--papier); aspect-ratio: 4 / 3; }
 .weg .bild img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
 .weg .bild a:hover img { transform: scale(1.02); }
-.weg .kurz { font-family: var(--serif); font-style: italic; color: var(--gold-dunkel); margin: 0 0 .5rem; font-size: 1.125rem; }
-.weg h3 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); font-weight: 300; }
+.weg .kurz { font-family: var(--sans); color: var(--gold-dunkel); margin: 0 0 .6rem; font-size: .9rem; }
+.weg h3 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); }
 @media (min-width: 900px) {
   .weg { grid-template-columns: 7fr 5fr; gap: 5rem; }
   .weg:nth-of-type(even) { grid-template-columns: 5fr 7fr; }
@@ -124,7 +124,7 @@ strong { font-weight: 400; }
 }
 
 /* Zitat */
-.zitat { font-family: var(--sans); font-weight: 300; font-size: clamp(1.7rem, 4vw, 3rem); line-height: 1.25; letter-spacing: -0.01em; max-width: 24ch; margin: 0 0 1.25rem; text-wrap: balance; }
+.zitat { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(1.6rem, 3.6vw, 2.6rem); line-height: 1.25; letter-spacing: -0.01em; max-width: 24ch; margin: 0 0 1.25rem; text-wrap: balance; }
 .zitat-quelle { font-family: var(--serif); font-style: italic; color: var(--gold-dunkel); margin: 0; }
 
 /* Text und Bild */
@@ -137,7 +137,7 @@ strong { font-weight: 400; }
 
 /* Listen und Infos */
 .liste { padding: 0; margin: 0; list-style: none; max-width: 32rem; }
-.liste li { padding: .9rem 0; border-top: 1px solid var(--linie); font-family: var(--sans); font-weight: 300; font-size: 1.1875rem; }
+.liste li { padding: .9rem 0; border-top: 1px solid var(--linie); font-family: var(--sans); font-weight: 400; font-size: 1.0625rem; }
 .liste li:last-child { border-bottom: 1px solid var(--linie); }
 .liste span { display: block; font-family: var(--serif); color: var(--leise); font-size: 1rem; }
 .info { margin: 0; max-width: 44rem; }
@@ -161,15 +161,6 @@ strong { font-weight: 400; }
 .verlauf img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 @media (min-width: 700px) { .verlauf { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
 
-/* Galerie, Werke ganz gezeigt */
-.galerie { columns: 2; column-gap: 16px; }
-.galerie figure { margin: 0 0 clamp(2rem, 4vw, 3.5rem); break-inside: avoid; }
-.galerie img { width: 100%; height: auto; box-shadow: 0 1px 2px rgba(39,43,58,.08); }
-.galerie figcaption { padding-top: .55rem; font-size: .9375rem; line-height: 1.4; }
-.galerie figcaption strong { display: block; font-family: var(--sans); font-weight: 400; font-size: 1rem; }
-.galerie figcaption span { color: var(--leise); }
-@media (min-width: 900px) { .galerie { columns: 3; column-gap: 40px; } }
-
 /* Kontakt und Fuß */
 .kontakt { background: var(--tinte); color: #e8e6e2; }
 .kontakt h2 { color: #fff; }
@@ -184,4 +175,52 @@ strong { font-weight: 400; }
 .seitenkopf { padding-block: clamp(3.5rem, 8vw, 6rem) 0; }
 .seitenkopf .lead { font-size: 1.375rem; max-width: 34rem; color: var(--leise); }
 
+/* Hinweis: Vorschlaege von Claude, vor dem Live-Gang entfernen */
+.vorschlag { border-left: 2px solid var(--gold-dunkel); padding-left: 1rem; }
+
+/* Galerie wie bei einer Kuenstlerseite: ganze Werke auf ruhigem Grund */
+.galerie-raster { display: grid; gap: 2.5rem 20px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 900px) { .galerie-raster { grid-template-columns: repeat(3, 1fr); gap: 4rem 40px; } .galerie-raster.drei { grid-template-columns: repeat(3, 1fr); } }
+.werk { margin: 0; }
+.werk a { text-decoration: none; display: block; }
+.werk .rahmen { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 5; background: var(--papier); padding: 8%; }
+.werk img { max-width: 100%; max-height: 100%; width: auto; height: auto; box-shadow: 0 1px 3px rgba(39,43,58,.18); transition: transform .5s ease; }
+.werk a:hover img { transform: scale(1.03); }
+.werk figcaption { padding-top: .8rem; font-size: .9375rem; line-height: 1.45; }
+.werk figcaption strong { display: block; font-family: var(--sans); font-weight: 400; font-size: 1rem; color: var(--tinte); }
+.werk figcaption span { color: var(--leise); }
+.status { color: var(--rose); }
+.werk-seite { padding-top: clamp(2.5rem, 6vw, 4rem); }
+.zurueck { font-family: var(--sans); font-size: .9rem; margin: 0 0 2rem; }
+.zurueck a { text-decoration: none; color: var(--leise); }
+.zurueck a:hover { color: var(--rose); }
+.werk-raster { display: grid; gap: 2.5rem; }
+.werk-bilder figure { margin: 0 0 1.5rem; background: var(--papier); padding: 6%; }
+.werk-bilder img { margin: 0 auto; box-shadow: 0 1px 3px rgba(39,43,58,.18); max-height: 80vh; width: auto; }
+.werk-info h1 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+.schlagworte { list-style: none; padding: 0; margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem .5rem; }
+.schlagworte li { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--leise); }
+.schlagworte li + li::before { content: "/"; margin-right: .5rem; color: var(--linie); }
+.blaettern { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; font-family: var(--sans); font-size: .9rem; }
+.blaettern a { text-decoration: none; color: var(--leise); }
+.blaettern a:hover { color: var(--rose); }
+.werk-text { margin-top: 1.5rem; }
+@media (min-width: 900px) { .werk-raster { grid-template-columns: 7fr 5fr; gap: 5rem; align-items: start; } .werk-info { position: sticky; top: calc(var(--kopf) + 2rem); } }
+
+/* Schritte und Prinzipien */
+.schritte { list-style: none; margin: 0; padding: 0; counter-reset: schritt; max-width: 40rem; }
+.schritte li { counter-increment: schritt; padding: 1.25rem 0 1.25rem 3.5rem; border-top: 1px solid var(--linie); position: relative; }
+.schritte li:last-child { border-bottom: 1px solid var(--linie); }
+.schritte li::before { content: counter(schritt); position: absolute; left: 0; top: 1.15rem; font-family: var(--sans); font-size: 1.4rem; color: var(--gold-dunkel); }
+.schritte strong { display: block; font-family: var(--sans); font-size: 1.0625rem; margin-bottom: .2rem; }
+.schritte span { color: var(--leise); display: block; }
+.drei-spalten { display: grid; gap: 2.5rem; }
+@media (min-width: 900px) { .drei-spalten { grid-template-columns: repeat(3, 1fr); gap: 3.5rem; } }
+.drei-spalten h3 { margin-bottom: .4rem; }
+.drei-spalten p { color: var(--leise); margin: 0; }
+
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .weg .bild img { transition: none; } }
+
+.formate a { text-decoration: none; display: block; }
+.formate a:hover img { opacity: .9; }
+.liste li strong { font-family: var(--sans); font-weight: 400; display: block; }
