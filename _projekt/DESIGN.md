@@ -3,7 +3,7 @@
 Freigegeben von der Kundin am: noch nicht. Erster Entwurf ohne Interview.
 
 ## Gefühl
-- Hell, bewegt, ehrlich. Das Bild trägt, die Schrift hält sich zurück.
+- Ruhig, klar, künstlerisch tief. Das Bild trägt, die Schrift hält sich zurück.
 - Ruhig im Tempo, mit einzelnen kräftigen Farbspuren in den Bildern.
 
 ## Schrift
@@ -15,14 +15,14 @@ Freigegeben von der Kundin am: noch nicht. Erster Entwurf ohne Interview.
 - Grund: #fbfbfa (kühles Galerieweiß)
 - Papier: #eceef4
 - Tinte: #14161b
-- Akzent: #2437c9 (Ultramarin), Pigment-Gelb #f2b134 nur für den Entwurfshinweis und in Bildern
+- Akzent: #2c3e7a (tiefes Schieferblau), ruhig. Farbe kommt aus Charlottes Bildern.
 
 ## Abstände und Rhythmus
 - Abschnitte eng: 2,25 rem mobil, 3 rem Desktop.
 - Textbreite maximal 62 Zeichen.
 
 ## Bilder
-- Platzhalter: abstrakte Farbspuren als SVG. Echte Fotos ersetzen sie 1:1.
+- Echte Bilder von ihrer bisherigen Website (Werke, Porträts, Malprozess), verkleinert als WebP. Retreat- und Kundenfotos mit erkennbaren Personen sind nicht im Repo.
 - Keine KI-Bilder von Menschen.
 
 ## Bewegung

@@ -8,13 +8,15 @@ Feedbackrunden: 0 von [offen].
 - Startseite: Hero mit ihrem Satz „Unser Leben ist ein Kunstwerk.“, drei Wege, „Aus der Arbeit“ (Projektbilder), Zitat, Über Charlotte, Kontakt.
 - Unterseiten: Generative Painting, Beratung, Kunst (Galerie mit zwölf Platzhalterwerken), Über Charlotte. Impressum und Datenschutz als Platzhalter.
 - Technik und SEO: statisches HTML, noindex, `Disallow: /`, sitemap mit github.io-Adresse, Schriften über Bunny Fonts.
-- Texte: aus der bestehenden Website von Charlotte gekürzt und gestrafft (Link im privaten Claude-Projekt, nicht im Repo). Alle Texte sind Entwurf und noch nicht von ihr freigegeben.
-- Bilder: nur generierte Platzhalter (`images/*.svg`, abstrakt, keine Menschen). Echte Fotos und Werke fehlen.
+- Texte: aus der bestehenden Website von Charlotte gekürzt und gestrafft (Link im privaten Claude-Projekt, nicht im Repo). Alle Texte sind Entwurf und noch nicht von ihr freigegeben. Bewusst weggelassen: Kundenliste, Kundenstimmen mit Namen, Retreat-Seite.
+- Bilder: echte Bilder von Charlottes bisheriger Website (47 Werke mit Titel und Maßen, drei Porträts, Malprozess-Fotos, Formate-Teaser), verkleinert als WebP in `images/`. Keine Fotos von Kundinnen, Kunden oder Retreat-Teilnehmenden. Rechte und Freigabe durch Charlotte offen.
 
 ## Offene Punkte
 ### Von der Kundin
 - [ ] Freigabe der Texte und des Entwurfs
-- [ ] Echte Fotos von Projekten und Porträts, Werkfotos mit Titel, Maßen und Verfügbarkeit
+- [ ] Zustimmung zur Nutzung ihrer Bilder und Werke im öffentlichen Repo
+- [ ] Fotos aus Projekten mit Gruppen und Teams (mit Einverständnis der Abgebildeten)
+- [ ] Entscheidung, ob Kundenliste und Kundenstimmen erscheinen
 - [ ] Zustimmung, ob und wo der Nachname erscheint
 - [ ] Impressumsdaten, Kontaktadresse
 ### Von Jakob / Claude
@@ -33,4 +35,5 @@ Feedbackrunden: 0 von [offen].
 - Seitenstruktur: Startseite, Generative Painting, Beratung, Kunst, Über mich.
 - Galerie in der Anmutung der Kirsch-Galerie: viel Weißraum, Werke im Vordergrund, Titel und Technik darunter.
 - Nur Vorname im Repo.
+- Gestaltung: ruhig, klar, künstlerisch tief; Entwurf folgt der Struktur der alten Website, modern und entschlackt.
 - Dieser Entwurf weicht bewusst von der Regel „vor Phase 4 kein Design“ ab, auf Jakobs Wunsch.
